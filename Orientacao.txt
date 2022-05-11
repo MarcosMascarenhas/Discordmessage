@@ -1,0 +1,95 @@
+Discord bot that can format and repost messages
+Scripting & Automation
+Posted 12 days ago
+Specialized profiles can help you better highlight your expertise when submitting proposals to jobs like these. Create a specialized profile.
+
+Worldwide
+Price is fixed. No negotiation, so do not apply hoping to negotiate a higher price. I have quite a few other jobs that are similar, so I would prefer someone who I can continue working with in the future.
+
+the discord bot should monitor a certain channel and look for the words "calls" or "puts" and if the line contains them format them if the right parameters are there and then repost it to another channel
+
+-it should be able to set date in code. ie. 9/24
+
+2 date parameters (I want to be able to set them manually in the code):
+DATE1:
+DATE2:
+
+-if line contains the word "SPY" or "QQQ", uses DATE2, otherwise DATE1
+
+NOTE: IN THE FOLLOWING EXAMPLES THE 1ST LINE IS THE MESSAGE AND THE 2ND LINE IS WHAT I WANT IT TO LOOK LIKE AFTER IT IS FORMATTED
+
+Took 442.5 spy calls (very risky) do your own DD
+BTO SPY 442.5C 'DATE2'
+
+IN LCID 27 calls starter
+BTO LCID 27C 'DATE1'
+
+In risky SPY 442.5 calls
+BTO SPY 442.5C "DATE2'
+
+In CRM 285 calls (risky)
+BTO CRM 285C 'DATE1'
+
+In 300 calls MSFT starter
+BTO MSFT 300C 'DATE1'
+
+Cutting AAL and SPY and in BYND 116 calls ***THIS HAS THE WORD SPY IN IT, BUT I STILL WANT IT TO USE DATE1 SOMEHOW
+BTO BYND 116C 'DATE1'
+
+took 20.5 AAL calls
+BTO AAL 20.5C 'DATE1'
+
+In lotto size 437 SPY calls (risky)
+BTO SPY 437C 'DATE2'
+
+In 443 SPY puts (very risky)
+BTO SPY 443P 'DATE2'
+
+IN MSFT 307.5 calls (starter)
+BTO MSFT 307.5C 'DATE1'
+
+Took SQ 255 calls (starter)
+BTO SQ 255C 'DATE1'
+
+Took small size 377 QQQ puts (risky)
+BTO QQQ 377P 'DATE2'
+
+Took 36.5 MARA calls starter size
+BTO MARA 36.5C 'DATE1'
+
+Took 40.5 XPEV calls (risky)
+BTO XPEV 40.5C 'DATE1'
+
+Took a risk ROKU 340 calls entry
+BTO ROKU 340C 'DATE1'
+
+Took 27 calls OXY. **** notice the period after OXY; should ignore the period and still put OXY
+BTO OXY 27C 'DATE1'
+
+PLTR 26.5 calls starter
+BTO PLTR 26.5C 'DATE1'
+
+AAPL PUTS 147
+BTO AAPL 147P 'DATE1'
+
+PLTR 29 calls
+BTO PLTR 29C 'DATE1'
+
+Took starter on UPST 305 calls (starter)
+BTO UPST 305C 'DATE1'
+
+27.5 PLTR calls (starter)
+BTO PLTR 27.5C 'DATE1'
+
+PLUG 25.5 calls (starter)
+BTO PLUG 25.5C 'DATE1'
+
+217.5 calls on BA
+BTO BA 217.5C 'DATE1'
+
+SHOULD IGNORE:
+I added some QQQ puts from MSFT profits.
+-no int or float
+
+35 Calls for MARA if next candle can hold
+-contains the word 'if ', so ignore
